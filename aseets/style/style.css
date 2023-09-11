@@ -1,7 +1,7 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 main{
@@ -11,10 +11,9 @@ main{
 .principal{
     display: flex;
     width: 100%;
-    text-align:center;
-    padding-top: 150px;
-    background-color: azure;
-    min-height: 80vh;
+    text-align: center;
+    background-color: aliceblue;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -28,20 +27,36 @@ main{
     display: flex;
     flex-direction: column;
     flex-basis: 30%;
-    border-color: black;
-    
+    border-right: solid 1px;
 }
 
 .contactos .contacto{
     display: flex;
     min-height: 70px;
     border-color: black;
-    border-top: solid;
+    border-top: solid 1px;
+    padding: 15px;
+}
+
+.contactos .contacto:hover{
+    display: flex;
+    min-height: 70px;
+    border-color: black;
+    border-top: solid 1px;
+    padding: 15px;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.contactos .contacto img{
+    width: 60px;
+    border-radius: 30px;
 }
 
 .contactos .contacto .info{
     text-align: left;
     padding: 10px;
+    width: 200px;
 }
 
 .nuevo-chat{
@@ -49,17 +64,23 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 18vh;
-    border-top: solid 1px;
+    min-height: 10vh;
     border-color: black;
+    border-top: solid 1px;
 }
+
 
 .nuevo-chat button{
     padding: 10px;
-    background-color: blueviolet;
-    border-radius: 10px;
+    background-color: blue;
     color: white;
+    border-radius: 10px;
 }
+
+.nuevo-chat button:hover{
+    cursor: pointer;
+}
+
 .contactos nav{
     display: flex;
     justify-content: space-between;
@@ -71,21 +92,29 @@ main{
     border-radius: 30px;
 }
 
-.contactos .perfil{
-    display: flex;
-    font-size: 12px;
+.contactos nav .perfil{
+    display:flex ;
+    font-size: 15px;
     align-items: center;
 }
 
-.contactos .perfil .info{
+.contactos nav .perfil:hover{
+    cursor: pointer;
+}
+
+.contactos nav .perfil .info{
     padding: 10px;
 }
 
-.contactos .nav .items{
+.contactos nav .items{
     display: flex;
     align-items: center;
 }
 
-.contactos .nav .items i{
+.contactos nav .items i{
     padding: 5px;
+}
+
+.contactos nav .items i:hover{
+    cursor: pointer;
 }
